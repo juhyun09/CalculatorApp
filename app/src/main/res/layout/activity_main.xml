@@ -10,71 +10,90 @@
         android:id="@+id/textView"
         android:layout_width="174dp"
         android:layout_height="49dp"
+        android:layout_marginTop="48dp"
         android:text="Calculator"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="88dp" />
 
-    <EditText
-        android:id="@+id/input2"
-        android:layout_width="162dp"
-        android:layout_height="54dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Enter Second Number"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="209dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/input1"
         android:layout_width="162dp"
         android:layout_height="54dp"
+        android:layout_marginTop="144dp"
         android:ems="10"
         android:inputType="text"
+
         android:text="Enter First Number"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="209dp" />
+        app:layout_constraintEnd_toStartOf="@+id/input2"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="162dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="532dp"
+        android:ems="10"
+        android:inputType="text"
+
+        android:text="Enter Second Number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="342dp"
         android:layout_height="309dp"
-        app:srcCompat="@drawable/calculator_operators"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="316dp" />
+        android:layout_marginBottom="72dp"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/calculator_operators" />
 
     <Button
         android:id="@+id/addButton"
         android:layout_width="110dp"
         android:layout_height="112dp"
+        android:layout_marginTop="388dp"
         android:alpha="0"
-        app:layout_constraintBottom_toTopOf="@+id/timesButton"
-        app:layout_constraintEnd_toStartOf="@+id/subtractButton" />
+        app:layout_constraintEnd_toStartOf="@+id/subtractButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/subtractButton"
         android:layout_width="110dp"
         android:layout_height="112dp"
         android:alpha="0"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintBottom_toTopOf="@+id/divideButton"
+        app:layout_constraintEnd_toEndOf="@+id/divideButton" />
 
     <Button
         android:id="@+id/timesButton"
         android:layout_width="110dp"
         android:layout_height="112dp"
+        android:layout_marginStart="96dp"
         android:alpha="0"
-        app:layout_constraintEnd_toStartOf="@+id/divideButton"
-        tools:layout_editor_absoluteY="470dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton" />
 
     <Button
         android:id="@+id/divideButton"
         android:layout_width="110dp"
         android:layout_height="112dp"
         android:alpha="0"
-        app:layout_constraintTop_toBottomOf="@+id/subtractButton"
-        tools:layout_editor_absoluteX="208dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/timesButton"
+        app:layout_constraintStart_toEndOf="@+id/timesButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
