@@ -20,13 +20,13 @@
 
     <EditText
         android:id="@+id/input1"
-        android:layout_width="162dp"
+        android:layout_width="230dp"
         android:layout_height="54dp"
         android:layout_marginTop="28dp"
-        android:ems="10"
 
+        android:ems="10"
+        android:hint="Enter First Number"
         android:inputType="numberSigned|number"
-        android:text="Enter First Number"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,13 +34,13 @@
 
     <EditText
         android:id="@+id/input2"
-        android:layout_width="162dp"
-        android:layout_height="54dp"
+        android:layout_width="223dp"
+        android:layout_height="52dp"
         android:layout_marginTop="40dp"
-        android:ems="10"
 
+        android:ems="10"
+        android:hint="Enter Second Number"
         android:inputType="numberSigned|number"
-        android:text="Enter Second Number"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,9 +74,9 @@
 
     <Button
         android:id="@+id/timesButton"
-        android:layout_width="89dp"
-        android:layout_height="61dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="93dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="300dp"
         android:alpha="100"
         android:onClick="buttonClicked"
@@ -86,8 +86,8 @@
 
     <Button
         android:id="@+id/divideButton"
-        android:layout_width="84dp"
-        android:layout_height="61dp"
+        android:layout_width="82dp"
+        android:layout_height="63dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="300dp"
         android:alpha="100"
